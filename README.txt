@@ -10,8 +10,8 @@ ISI WEBSITE
 - Beranda dan identitas toko
 - Tentang Kami
 - Katalog 3 produk dengan nama, deskripsi, dan harga dummy
-- Keranjang belanja sederhana
-- Checkout simulasi melalui WhatsApp
+- Keranjang belanja interaktif (tambah, kurang, hapus, dan tersimpan di browser)
+- Checkout melalui WhatsApp dengan rincian barang dan total
 - Kebijakan pengiriman, retur/refund, privasi, pembayaran
 - Kontak, tautan media sosial, dan formulir email
 
@@ -37,3 +37,10 @@ FOTO PRODUK YANG SUDAH DIPASANG
 - produk-kaos-hitam.jpg
 
 Harga di katalog adalah harga contoh/dummy. Silakan ubah sesuai harga resmi produk.
+
+PEMBARUAN VERSI INI
+- Tampilan animasi masuk, efek hover, dan reveal saat scroll.
+- Ikon keranjang di navigasi membuka panel keranjang.
+- Jumlah barang dan total harga diperbarui otomatis.
+- Isi keranjang disimpan di browser pengunjung menggunakan localStorage.
+- Nomor WhatsApp pada script.js masih contoh 6281200000000 dan wajib diganti ke nomor toko aktif.
