@@ -44,3 +44,28 @@ PEMBARUAN VERSI INI
 - Jumlah barang dan total harga diperbarui otomatis.
 - Isi keranjang disimpan di browser pengunjung menggunakan localStorage.
 - Nomor WhatsApp pada script.js masih contoh 6281200000000 dan wajib diganti ke nomor toko aktif.
+
+
+PEMBARUAN INFINITE SCROLL
+- Banner koleksi produk bergerak horizontal secara terus-menerus (infinite loop).
+- Foto produk menggunakan aset kaos putih, tote bag, dan kaos hitam yang tersedia di ZIP.
+- Animasi berhenti sementara saat kursor berada di atas banner.
+- Di perangkat dengan preferensi reduced motion, animasi otomatis dinonaktifkan.
+
+
+PEMBARUAN INTERAKTIF & ANIMASI
+- Scroll progress bar di bagian atas halaman.
+- Header memiliki efek blur dan bayangan saat halaman digulir.
+- Tombol kembali ke atas muncul setelah pengunjung menggulir halaman.
+- Foto katalog dapat diklik untuk membuka pratinjau layar penuh (lightbox).
+- Tombol tambah keranjang memberi animasi konfirmasi.
+- Kartu produk memiliki efek tilt ringan saat pointer digerakkan (desktop).
+- Hover effect pada kartu, tombol, navigasi, dan bagian layanan.
+- Tetap menghormati pengaturan reduced motion perangkat pengguna.
+
+
+PEMBARUAN BAGIAN ABOUT OUR STORE
+- Menambahkan editorial showcase berisi tiga foto produk asli dari aset website.
+- Menambahkan panel teks brand untuk mengisi ruang kosong dan memperkuat identitas visual.
+- Efek hover zoom lembut pada foto produk.
+- Layout responsif untuk tablet dan ponsel.
