@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Geezmo's Supply menyediakan produk pilihan dengan pelayanan yang praktis dan tepercaya.">
+  <title>Geezmo's Supply | Company Profile & Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<button class="back-to-top" id="backToTop" type="button" aria-label="Kembali ke atas">↑</button>
+<div class="image-lightbox" id="imageLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Pratinjau foto produk">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Tutup pratinjau">×</button>
+  <img id="lightboxImage" src="" alt="Pratinjau produk">
+  <p id="lightboxCaption"></p>
+</div>
+<header class="header">
+<a class="brand" href="#home">
+    <img src="logo-geezmo.png" alt="Logo Geezmo's Supply" class="brand-logo">
+    <span>GEEZMO'S<small>SUPPLY</small></span>
+</a>
+   <button class="menu" id="menu" aria-label="Buka navigasi">☰</button>
+  <button class="cart-trigger" id="cartTrigger" type="button" aria-label="Buka keranjang belanja" aria-haspopup="dialog" aria-controls="cartDrawer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l2.1 11.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>
+    <span>Keranjang</span><b class="cart-badge" id="headerCartCount">0</b>
+  </button>
+  <nav id="nav"><a href="#home">Beranda</a><a href="#about">Tentang Kami</a><a href="#products">Produk</a><a href="#policies">Kebijakan</a><a href="#contact">Kontak</a></nav>
+  <a class="nav-cta" href="#products">Belanja Sekarang ↗</a>
+</header>
+
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+  <div class="cart-drawer-head"><div><span class="kicker">YOUR SELECTION</span><h2 id="cartTitle">Keranjang</h2></div><button class="cart-close" id="cartClose" aria-label="Tutup keranjang">×</button></div>
+  <div class="cart-items" id="cartItems"><p class="cart-empty">Keranjang masih kosong. Yuk, pilih produk favoritmu.</p></div>
+  <div class="cart-drawer-foot"><div class="cart-subtotal"><span>Total</span><strong id="drawerTotal">Rp0</strong></div><button class="btn dark cart-checkout" id="drawerCheckout" type="button">Checkout via WhatsApp <b>↗</b></button><p class="cart-hint">Pesanan akan dikirim ke WhatsApp untuk konfirmasi.</p></div>
+</aside>
+<main>
+<section class="hero hero-fullscreen" id="home" aria-label="Geezmo's Supply banner utama">
+  <img src="banner-geezmo.jpg" alt="Poster koleksi Geezmo's Supply" class="hero-banner">
+  <div class="hero-overlay">
+    <span>GEEZMO'S SUPPLY · OFFICIAL COLLECTION</span>
+    <a class="hero-explore" href="#products">EXPLORE COLLECTION <b>↘</b></a>
+  </div>
+</section>
+
+<!-- Infinite product showcase banner -->
+<section class="product-marquee" aria-label="Koleksi produk Geezmo's Supply">
+  <div class="marquee-heading">
+    <span>GEEZMO'S SUPPLY</span>
+    <span>THE COLLECTION — 2026</span>
+  </div>
+  <div class="marquee-window">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <a class="marquee-product" href="#products" aria-label="Lihat Geezmo Graphic Tee White">
+          <img src="produk-kaos-putih.jpg" alt="Geezmo Graphic Tee warna putih">
+          <span>GRAPHIC TEE / WHITE</span>
+        </a>
+        <a class="marquee-product" href="#products" aria-label="Lihat Geezmo Tote Bag Black">
+          <img src="produk-tote-bag.jpg" alt="Geezmo Tote Bag warna hitam">
+          <span>TOTE BAG / BLACK</span>
+        </a>
+        <a class="marquee-product" href="#products" aria-label="Lihat Geezmo Basic Tee Black">
+          <img src="produk-kaos-hitam.jpg" alt="Geezmo Basic Tee warna hitam">
+          <span>BASIC TEE / BLACK</span>
+        </a>
+      </div>
+      <div class="marquee-group" aria-hidden="true">
+        <a class="marquee-product" href="#products" tabindex="-1">
+          <img src="produk-kaos-putih.jpg" alt="">
+          <span>GRAPHIC TEE / WHITE</span>
+        </a>
+        <a class="marquee-product" href="#products" tabindex="-1">
+          <img src="produk-tote-bag.jpg" alt="">
+          <span>TOTE BAG / BLACK</span>
+        </a>
+        <a class="marquee-product" href="#products" tabindex="-1">
+          <img src="produk-kaos-hitam.jpg" alt="">
+          <span>BASIC TEE / BLACK</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="marquee-footer"><span>SCROLLING COLLECTION</span><span>DISCOVER YOUR STYLE ↗</span></div>
+</section>
+
+<section class="section about" id="about">
+  <div class="kicker">01 — ABOUT OUR STORE</div>
+  <div class="two-col">
+    <h2>Lebih dari sekadar<br><em>penyedia produk.</em></h2>
+    <div><p class="lead">Kami percaya kebutuhan yang tepat dimulai dari produk berkualitas dan pelayanan yang bisa diandalkan.</p><p>Geezmo's Supply merupakan toko yang menyediakan berbagai pilihan produk untuk memenuhi kebutuhan pelanggan. Kami berusaha memberikan informasi produk secara jelas, proses pemesanan yang mudah, serta pelayanan yang ramah dan responsif.</p><a class="under-link" href="#contact">Hubungi tim kami ↗</a></div>
+  </div>
+  <div class="about-showcase" aria-label="Pilihan koleksi Geezmo's Supply">
+    <div class="about-showcase-intro"><span>THE GEEZMO'S EDIT</span><strong>Everyday pieces.<br><em>Distinctive identity.</em></strong><small>DESIGNED TO STAND OUT — 2026</small></div>
+    <figure class="about-shot about-shot-main"><img src="produk-kaos-putih.jpg" alt="Graphic tee putih Geezmo's Supply"><figcaption><span>01 / GRAPHIC TEE</span><b>WHITE EDITION ↗</b></figcaption></figure>
+    <figure class="about-shot about-shot-tote"><img src="produk-tote-bag.jpg" alt="Tote bag hitam Geezmo's Supply"><figcaption><span>02 / DAILY ESSENTIAL</span><b>TOTE BAG ↗</b></figcaption></figure>
+    <figure class="about-shot about-shot-black"><img src="produk-kaos-hitam.jpg" alt="Basic tee hitam Geezmo's Supply"><figcaption><span>03 / BASIC TEE</span><b>BLACK EDITION ↗</b></figcaption></figure>
+  </div>
+  <div class="values">
+    <article><b>01</b><h3>Quality First</h3><p>Memperhatikan kualitas dan detail pada setiap produk.</p></article>
+    <article><b>02</b><h3>Easy Shopping</h3><p>Proses pencarian informasi dan pemesanan yang praktis.</p></article>
+    <article><b>03</b><h3>Trusted Service</h3><p>Mengutamakan komunikasi yang jelas dan pelayanan responsif.</p></article>
+  </div>
+</section>
+
+<section class="section products" id="products">
+  <div class="section-heading"><div><div class="kicker">02 — OUR COLLECTION</div><h2>Produk pilihan,<br><em>untuk kebutuhanmu.</em></h2></div><p>Pilihan produk Geezmo's Supply. Temukan item favoritmu dan masukkan ke keranjang.</p></div>
+  <div class="product-grid" id="productGrid">
+    <article class="product-card">
+      <div class="product-photo photo-one"><span class="photo-label">GS / 01</span><img class="product-image" src="produk-kaos-putih.jpg" alt="Kaos putih Geezmo's Supply"></div>
+      <div class="product-meta"><div><h3>Geezmo Graphic Tee — White</h3><p>Kaos putih dengan grafis logo Geezmo's.</p><strong>Rp129.000</strong></div><button class="add" data-name="Geezmo Graphic Tee — White" data-price="129000">+</button></div>
+    </article>
+    <article class="product-card">
+      <div class="product-photo photo-two"><span class="photo-label">GS / 02</span><img class="product-image" src="produk-tote-bag.jpg" alt="Tote bag hitam Geezmo's Supply"></div>
+      <div class="product-meta"><div><h3>Geezmo Tote Bag — Black</h3><p>Tote bag hitam dengan grafis logo Geezmo's.</p><strong>Rp79.000</strong></div><button class="add" data-name="Geezmo Tote Bag — Black" data-price="79000">+</button></div>
+    </article>
+    <article class="product-card">
+      <div class="product-photo photo-three"><span class="photo-label">GS / 03</span><img class="product-image" src="produk-kaos-hitam.jpg" alt="Kaos hitam Geezmo's Supply dengan grafis kecil"></div>
+      <div class="product-meta"><div><h3>Geezmo Basic Tee — Black</h3><p>Kaos hitam dengan detail grafis minimalis.</p><strong>Rp129.000</strong></div><button class="add" data-name="Geezmo Basic Tee — Black" data-price="129000">+</button></div>
+    </article>
+  </div>
+  <p class="notice">*Produk dan harga merupakan data dummy untuk keperluan rancangan website.</p>
+</section>
+
+<section class="section services">
+  <div class="kicker">03 — WHY GEEZMO'S SUPPLY</div>
+  <div class="service-grid"><h2>Belanja mudah,<br><em>lebih terarah.</em></h2><div class="service-list">
+    <article><span>01</span><div><h3>Informasi Produk Jelas</h3><p>Detail dan harga ditampilkan agar pelanggan mudah memilih.</p></div><b>↗</b></article>
+    <article><span>02</span><div><h3>Pemesanan Praktis</h3><p>Pelanggan dapat menghubungi toko untuk melakukan pemesanan.</p></div><b>↗</b></article>
+    <article><span>03</span><div><h3>Layanan Responsif</h3><p>Tim siap membantu pertanyaan seputar produk dan pesanan.</p></div><b>↗</b></article>
+  </div></div>
+</section>
+
+<section class="section trust" id="policies">
+  <div class="kicker">04 — SHOPPING INFORMATION</div><h2>Informasi &<br><em>kebijakan toko.</em></h2>
+  <div class="policy-grid">
+    <article><span>01</span><h3>Pengiriman</h3><p>Pesanan diproses setelah konfirmasi. Pengiriman menggunakan jasa kurir yang disepakati bersama. Estimasi biaya dan waktu kirim diinformasikan sebelum pembayaran.</p></article>
+    <article><span>02</span><h3>Retur & Refund</h3><p>Permintaan retur dapat diajukan maksimal 2 × 24 jam setelah barang diterima apabila produk rusak atau tidak sesuai pesanan. Sertakan foto dan bukti transaksi. Ketentuan final dikonfirmasi oleh toko.</p></article>
+    <article><span>03</span><h3>Privasi</h3><p>Data nama, alamat, dan kontak pelanggan hanya digunakan untuk komunikasi, pemrosesan pesanan, dan pengiriman. Data tidak diperjualbelikan.</p></article>
+    <article><span>04</span><h3>Pembayaran</h3><p>Pembayaran dilakukan setelah total pesanan dikonfirmasi. Metode simulasi: transfer bank dan QRIS. Pastikan pembayaran hanya ke rekening resmi yang dikonfirmasi toko.</p></article>
+  </div>
+  <div class="checkout">
+    <div><div class="kicker">SIMPLE CHECKOUT</div><h3>Keranjang belanja <span id="cartCount">0</span></h3><p id="cartText">Belum ada produk di keranjang.</p></div>
+    <div class="checkout-actions"><strong id="cartTotal">Rp0</strong><button class="btn dark" id="checkout">Lanjut Pesan via WhatsApp ↗</button></div>
+  </div>
+  <p class="notice">Fitur keranjang dan checkout pada versi ini merupakan simulasi front-end. Konfirmasi pesanan dilakukan melalui WhatsApp.</p>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="kicker">05 — CONTACT US</div><div class="contact-grid">
+    <div><h2>Mari mulai<br><em>percakapan.</em></h2><p class="lead">Ada pertanyaan atau ingin melakukan pemesanan? Hubungi Geezmo's Supply.</p>
+      <div class="contact-line"><span>EMAIL</span><b>hello@geezmossupply.com</b></div>
+      <div class="contact-line"><span>WHATSAPP</span><b>+62 812-0000-0000</b></div>
+      <div class="contact-line"><span>ALAMAT</span><b>Salatiga, Jawa Tengah, Indonesia</b></div>
+      <div class="socials"><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://tiktok.com/" target="_blank" rel="noreferrer">TikTok ↗</a></div>
+    </div>
+    <form id="contactForm"><label>Nama<input name="name" required placeholder="Nama kamu"></label><label>Email / WhatsApp<input name="contact" required placeholder="Kontak yang bisa dihubungi"></label><label>Pesan<textarea name="message" rows="4" required placeholder="Tuliskan pesanmu..."></textarea></label><button class="btn dark" type="submit">Kirim Pesan ↗</button><small>Form demo akan membuka aplikasi email perangkat.</small></form>
+  </div>
+</section>
+</main>
+<footer><a class="brand" href="#home"><span class="mark">G<span>.</span></span><span>GEEZMO'S<small>SUPPLY</small></span></a><p>© 2026 Geezmo's Supply. All rights reserved.</p><a href="#home">Kembali ke atas ↑</a></footer>
+<script src="script.js"></script>
+</body></html>
